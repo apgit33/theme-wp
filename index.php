@@ -1,6 +1,6 @@
 <?php get_header() ?>
-    
-    Hello <?php wp_title() ?>
+
+
+<p>Ceci est la page index</p>
     
 <?php get_footer() ?>
-
