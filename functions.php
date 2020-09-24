@@ -11,10 +11,13 @@ function montheme_supports(){
 
 function montheme_register_assets(){
     // wp_register_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
-    // wp_enqueue_style('bootstrap');   
-    wp_register_style('bulma', 'https://www.jsdelivr.com/package/npm/bulma');
-    wp_enqueue_style('bulma');
-    wp_enqueue_style('moncss', get_stylesheet_uri());
+    // wp_enqueue_style('bootstrap');  
+    wp_register_style( 'bulma', get_template_directory_uri() . '/css/bulma.min.css' );
+    wp_enqueue_style( 'bulma' );
+
+    // wp_enqueue_style('moncss', get_stylesheet_uri());
+    wp_register_style( 'custom', get_template_directory_uri() . '/css/custom.css' );
+    wp_enqueue_style( 'custom' );
 
 }
 
