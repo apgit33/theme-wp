@@ -1,3 +1,4 @@
+<?php define('PATH',get_template_directory_uri()); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +10,21 @@
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-            <?php //wp_title() ?>
-        </a>
+        <?php 
+        // $title = explode('|', wp_get_document_title())[0];
+        // $title2 = explode('|', wp_get_document_title())[1];
+        // echo $title.$title2;
+?>
+        <a class="navbar-item" href="#">
+        
+            <img src="<?=PATH?>/images/logo.svg" alt="logo" width="112" height="28">
+            <!-- <img src="https://bulma.io/images/bulma-logo.png" alt="logo" width="112" height="28"> -->
+        <?php // echo $title ?>
+    </a>
+        <?php
+	// } 
+  ?>
+    
 
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
@@ -62,13 +75,11 @@
 <section class="hero">
     <div class="hero-body">
         <div class="container">
-            <h1 class="title">
-                Singer
-            </h1>
+
         </div>
     </div>
 </section>
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <div class="container">
     <div>
         <?php
