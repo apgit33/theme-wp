@@ -1,14 +1,48 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'nunito-bold';
+  src: url("fonts/nunito/Nunito-Bold.eot");
+  src: local("☺"), url("fonts/nunito/Nunito-Bold.woff") format("woff"), url("fonts/nunito/Nunito-Bold.ttf") format("truetype"), url("fonts/nunito/Nunito-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'nunito-regular';
+  src: url("fonts/nunito/Nunito-Regular.eot");
+  src: local("☺"), url("fonts/nunito/Nunito-Regular.woff") format("woff"), url("fonts/nunito/Nunito-Regular.ttf") format("truetype"), url("fonts/nunito/Nunito-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+$fontRegular : 'nunito-regular';
+$fontbold : 'nunito-bold';
+
 
 body {
     margin: 0;
+    font-family: $fontRegular;
     /* overflow: hidden; */
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $fontbold;
+}
+
+
+h4 {
+  font-size: 24px;
+  &.contact {
+    margin: 20px 0;
+  }
+  &::before, &::after {
+    content: url('../images/music');
+
+  }
 }
 .container {
     padding: 20px;
 }
 .hero {
 
-  background: no-repeat url('../banniere.jpg');
+  background: no-repeat url('../images/banniere.jpg');
   /* background-size:100% auto; */
   background-size:cover;
 }
@@ -19,7 +53,38 @@ body {
   /* overflow-y: auto;
    */
    z-index: 99;
+transition: .2s linear;
+
 }
+
+.navbar-menu {display: block;}
+
+    #navbartop {
+      position: absolute;
+      z-index: -19;
+      width: 100%;
+      transition: top .400s linear;
+      top: -606%;
+    }
+    #navbartop.animated {
+        transition: top .400s linear;
+        top: 100%;
+    }
+
+.column {
+  padding: 0;
+}
+.columns{
+  margin: 0;
+}
+
+.card .image {
+  margin: 16px;
+}
+
+
+
+
 img.separator {
 //   padding: 0 50px;
     margin-bottom: -40px;
@@ -53,16 +118,20 @@ img.separator {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 10px;
     z-index: 99;
     font-size: 18px;
     border: none;
-    outline: none;
-    background-color: red;
-    color: white;
+    // outline: none;
+    // background-color: red;
+    // color: rgb(255, 255, 255);
     cursor: pointer;
     padding: 15px;
-    border-radius: 4px;
+    // border-radius: 4px;
+    background:#7c7a7a;
+    box-shadow:2px 2px 8px #aaa;
+    border-radius:50%;
+    color:rgb(255, 255, 255);
   }
   
   #myBtn:hover {
