@@ -3,6 +3,6 @@
 
 
 
-<p>Ceci est la page accueil</p>
+<!-- <p>Ceci est la page accueil</p> -->
 
 <?php get_footer() ?>
