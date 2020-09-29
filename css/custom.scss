@@ -20,6 +20,8 @@ body {
     margin: 0;
     font-family: $fontRegular;
     /* overflow: hidden; */
+    background-color: rgba(107, 95, 95, 0.582);
+    color: black;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -72,7 +74,7 @@ transition: .2s linear;
     }
 
 .column {
-  padding: 0;
+  // padding: 0;
 }
 .columns{
   margin: 0;
@@ -117,7 +119,7 @@ img.separator {
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 35px;
     right: 10px;
     z-index: 99;
     font-size: 18px;
@@ -290,3 +292,21 @@ img.separator {
 
 
 
+.contacts {
+  // margin-top: -80px;
+  
+}
+
+
+
+.content-404 {
+  h2 {
+    color: #fff;
+    font-size: 88px;
+    // margin: 0px;
+  }
+  h3 {
+    color: #fff;
+    font-size: 30px;
+  }
+}

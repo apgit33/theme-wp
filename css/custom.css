@@ -14,7 +14,9 @@
 body {
   margin: 0;
   font-family: "nunito-regular";
-  /* overflow: hidden; */ }
+  /* overflow: hidden; */
+  background-color: rgba(107, 95, 95, 0.582);
+  color: black; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "nunito-bold"; }
@@ -57,9 +59,6 @@ h4 {
   transition: top .400s linear;
   top: 100%; }
 
-.column {
-  padding: 0; }
-
 .columns {
   margin: 0; }
 
@@ -89,7 +88,7 @@ img.separator {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 35px;
   right: 10px;
   z-index: 99;
   font-size: 18px;
@@ -249,5 +248,12 @@ img.separator {
   background: no-repeat url("./banniere.jpg");
   /* background-size:100% auto; */
   background-size: cover; }
+
+.content-404 h2 {
+  color: #fff;
+  font-size: 88px; }
+.content-404 h3 {
+  color: #fff;
+  font-size: 30px; }
 
 /*# sourceMappingURL=custom.css.map */
