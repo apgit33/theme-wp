@@ -16,8 +16,13 @@ if ( have_posts() ) {
 
         the_content();
 
+        if (comments_open() || get_comments_number()) {
+                comments_template();
+        }
         
-	} 
 } 
+
+}        
+
 ?>
 <?php get_footer() ?>
