@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head() ?>
 </head>
-<body>
-
+<body <?php body_class()?>>
+<?php wp_body_open()?>
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="<?php home_url() ?>">
+        <a class="navbar-item" href="<?php echo home_url() ?>">
             <img src="<?=PATH?>/images/logo.svg" alt="logo" width="112" height="28">
         </a>
         
@@ -23,7 +23,6 @@
 
     <div id="navbartop" class="navbar-menu">
         <div class="navbar-start">
-            <!-- <a class="navbar-item"> -->
             <?php
             if( has_nav_menu('header-menu')) {
                 wp_nav_menu(
@@ -35,7 +34,6 @@
                 );
             }
         ?>
-            <!-- </a> -->
             </div>
 
         <div class="navbar-end">
@@ -52,4 +50,3 @@
     </div>
 </section>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<!-- <div class="container"> -->
