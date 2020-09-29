@@ -25,7 +25,7 @@
                 </div>
                 <footer class="card-footer">
                     <a href="<?php the_permalink() ?>" class="card-footer-item">Lire la suite..</a>
-                    <a href="#" class="card-footer-item"><?php echo get_comments_number() ?> commentaire(s)</a>
+                    <a href="<?php the_permalink() ?>#comms" class="card-footer-item has-text-centered"><?php echo get_comments_number() ?> commentaire<?php echo (get_comments_number()<2)?"":"s" ?></a>
                 </footer>
             </div>
             <div>
