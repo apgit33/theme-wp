@@ -25,10 +25,11 @@ $count = absint(get_comments_number());
 <?php if (comments_open()): ?>
     <div class="columns">
         <div class="column">
-            <?php comment_form([
-                'title_reply' => "",
-                'class_submit' => "submit button",
-                ])  ?>
+                <?php comment_form([
+                    'title_reply' => "",
+                    'class_submit' => "submit button",
+                    ]) 
+                ?>
         </div>
     </div>
 

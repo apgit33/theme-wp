@@ -21,6 +21,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "nunito-bold"; }
 
+ol {
+  padding: 10px 20px; }
+
+.fin_com {
+  text-align: center; }
+
 h4 {
   font-size: 24px; }
   h4.contact {
@@ -248,6 +254,9 @@ img.separator {
   background: no-repeat url("./banniere.jpg");
   /* background-size:100% auto; */
   background-size: cover; }
+
+#comment {
+  width: 100%; }
 
 .content-404 h2 {
   color: #fff;

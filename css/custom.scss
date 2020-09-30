@@ -28,6 +28,13 @@ h1,h2,h3,h4,h5,h6 {
   font-family: $fontbold;
 }
 
+ol {
+  padding: 10px 20px;
+}
+
+.fin_com {
+  text-align: center;
+}
 
 h4 {
   font-size: 24px;
@@ -298,7 +305,9 @@ img.separator {
 }
 
 
-
+#comment {
+  width: 100%;
+}
 .content-404 {
   h2 {
     color: #fff;
