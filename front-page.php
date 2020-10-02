@@ -38,7 +38,7 @@
                     <div class="content">
                     <h2 class="title is-4"><a href="<?php the_permalink() ?>"><?php the_title()?></a></h2>
                         <time><?php echo get_the_date()?></time>
-                        <p>Écrit par : <?php the_author()?></p>
+                        <p>Écrit par : <?php the_author_posts_link()?></p>
                         <div><?php the_excerpt() ?></div>
                         
                     </div>
