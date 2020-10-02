@@ -4,81 +4,109 @@
   src: url("fonts/nunito/Nunito-Bold.eot");
   src: local("☺"), url("fonts/nunito/Nunito-Bold.woff") format("woff"), url("fonts/nunito/Nunito-Bold.ttf") format("truetype"), url("fonts/nunito/Nunito-Bold.svg") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'nunito-regular';
   src: url("fonts/nunito/Nunito-Regular.eot");
   src: local("☺"), url("fonts/nunito/Nunito-Regular.woff") format("woff"), url("fonts/nunito/Nunito-Regular.ttf") format("truetype"), url("fonts/nunito/Nunito-Regular.svg") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: "nunito-regular";
   /* overflow: hidden; */
   background-color: rgba(107, 95, 95, 0.582);
-  color: black; }
+  color: black;
+}
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "nunito-bold"; }
+  font-family: "nunito-bold";
+}
 
 ol {
-  padding: 10px 20px; }
+  padding: 10px 20px;
+}
 
 .fin_com {
-  text-align: center; }
+  text-align: center;
+}
 
 h4 {
-  font-size: 24px; }
-  h4.contact {
-    margin: 20px 0; }
-  h4::before, h4::after {
-    content: url("../images/music"); }
+  font-size: 24px;
+}
+
+h4.contact {
+  margin: 20px 0;
+}
+
+h4::before, h4::after {
+  content: url("../images/music");
+}
 
 .container {
-  padding: 20px; }
+  padding: 20px;
+}
 
 .hero {
   background: no-repeat url("../images/banniere.jpg");
   /* background-size:100% auto; */
-  background-size: cover; }
+  background-size: cover;
+}
 
 .navbar {
+  position: -webkit-sticky;
   position: sticky;
   /* display: inline-block; */
   top: 0;
   /* overflow-y: auto;
    */
   z-index: 99;
-  transition: .2s linear; }
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
 
 .navbar-menu {
-  display: block; }
+  display: block;
+}
 
 #navbartop {
   position: absolute;
   z-index: -19;
   width: 100%;
+  -webkit-transition: top .400s linear;
   transition: top .400s linear;
-  top: -606%; }
+  top: -606%;
+}
 
 #navbartop.animated {
+  -webkit-transition: top .400s linear;
   transition: top .400s linear;
-  top: 100%; }
+  top: 100%;
+}
 
 .columns {
-  margin: 0; }
+  margin: 0;
+}
 
 .card .image {
-  margin: 16px; }
+  margin: 16px;
+}
 
 img.separator {
-  margin-bottom: -40px; }
+  margin-bottom: -40px;
+}
 
 #main_sidebar {
-  display: none; }
+  display: none;
+}
 
 @media screen and (min-width: 1020px) {
   #main_sidebar {
+    position: -webkit-sticky;
     position: sticky;
     display: inline-block;
     vertical-align: top;
@@ -87,9 +115,13 @@ img.separator {
     width: 200px;
     top: 52px;
     bottom: 0;
-    padding: 30px; } }
+    padding: 30px;
+  }
+}
+
 .content {
-  /* display: inline-block; */ }
+  /* display: inline-block; */
+}
 
 #myBtn {
   display: none;
@@ -102,12 +134,15 @@ img.separator {
   cursor: pointer;
   padding: 15px;
   background: #7c7a7a;
-  box-shadow: 2px 2px 8px #aaa;
+  -webkit-box-shadow: 2px 2px 8px #aaa;
+          box-shadow: 2px 2px 8px #aaa;
   border-radius: 50%;
-  color: white; }
+  color: white;
+}
 
 #myBtn:hover {
-  background-color: #555; }
+  background-color: #555;
+}
 
 /*
 #menuToggle
@@ -245,7 +280,8 @@ img.separator {
  */
 .test {
   width: 100%;
-  height: 229px; }
+  height: 229px;
+}
 
 .banniere {
   width: 100%;
@@ -253,16 +289,24 @@ img.separator {
   height: 100%;
   background: no-repeat url("./banniere.jpg");
   /* background-size:100% auto; */
-  background-size: cover; }
+  background-size: cover;
+}
 
 #comment {
-  width: 100%; }
+  width: 100%;
+}
 
 .content-404 h2 {
   color: #fff;
-  font-size: 88px; }
+  font-size: 88px;
+}
+
 .content-404 h3 {
   color: #fff;
-  font-size: 30px; }
+  font-size: 30px;
+}
 
+#single .aside {
+  display: none;
+}
 /*# sourceMappingURL=custom.css.map */
