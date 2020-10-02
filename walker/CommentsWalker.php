@@ -26,7 +26,6 @@ class CommentsWalker extends \Walker_Comment {
 	 */
 	public function start_lvl( &$output, $depth = 0, $args = array() ) {
 		$GLOBALS['comment_depth'] = $depth +1;
-
 		$output .= "<div class='ml-4'>";
 	}
 
@@ -46,7 +45,9 @@ class CommentsWalker extends \Walker_Comment {
 	public function end_lvl( &$output, $depth = 0, $args = array() ) {
 		$GLOBALS['comment_depth'] = $depth +1;
 
-        $output .= "</div>";
+        $output .= "</div>";		if($depth === 0) {
+			$output .= "<div class='fin_com'>----------------------------</div>";
+		}
 	}
 /**
 	 * Outputs a single comment.
@@ -109,7 +110,7 @@ class CommentsWalker extends \Walker_Comment {
 		<br />
 		<?php endif; ?>
 
-		<div class="comment-meta commentmetadata"><a href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>">
+		<div class="comment-meta commentmetadata list_coms"><a href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>">
 			<?php
 				/* translators: 1: Comment date, 2: Comment time. */
 				printf( __( '%1$s at %2$s' ), get_comment_date( '', $comment ), get_comment_time() );

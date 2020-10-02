@@ -1,13 +1,14 @@
 <?php
 require_once('walker/CommentsWalker.php');
 require_once("options/social.php");
+require_once("options/home.php");
 
 //ajoute une nouvelle zone de menu
 function register_menu(){
     register_nav_menus(
         array(
             "header-menu" => __( "Menu Header" ),
-            "social-menu" => __( "Social Menu" )
+            // "social-menu" => __( "Social Menu" )
         )
       );
 }
@@ -62,3 +63,4 @@ add_filter("nav_menu_css_class","montheme_menu_class");
 
 
 SocialMenu::register();
+HomeMenu::register();

@@ -37,3 +37,5 @@ for (let burger of burgers) {
       $target.classList.toggle('is-active');
   })
 }
+
+document.getElementById('comment').className += "textarea mb-1";
